@@ -1,0 +1,309 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+  display: flex;
+}
+
+nav{
+  width: 20%;
+  height: 100vh;
+  background-color: rgb(31, 31, 31);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav > .admin-label{
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+nav > .admin-label > hr{
+  margin-left: 0px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+nav > .navigation{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-block: 20px;
+}
+nav > .navigation > button{
+  font-size: 1.5rem;
+  padding: 5px;
+  text-align: left;
+  padding-left: 25%;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+nav > .navigation > button:hover{
+  background-color: rgb(0, 0, 0);
+}
+
+/* main design  */
+main{
+  width: 80%;
+  height: 100vh;
+  position: relative;
+}
+
+main > header{
+  background-color: rgb(2, 77, 164);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  height: 10%;
+}
+
+main > .home{
+  height: 90%;
+  padding: 20px;
+  position: relative;
+}
+
+main > .home > .welcome-message{
+  height: 20%;
+}
+
+main > .home > .welcome-message > hr{
+  background-color: rgb(2, 77, 164);
+  height: 5px;
+}
+
+main > .home > .welcome-message > h2{
+  margin-top: 10px;
+  padding: 5px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.614);
+  padding-left: 15px;
+}
+
+main > .home > .content{
+  height: 80%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+main > .home > .content > .project-progress{
+  width: 60%;
+  padding: 10px;
+}
+
+main > .home > .content > .project-progress > h4{
+  margin-bottom: 10px;
+}
+main > .home > .content > .project-progress > table{
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  border-top: 2px solid rgb(2, 77, 164) ;
+  box-shadow: 00px 0px 10px rgba(0, 0, 0, 0.662);
+}
+
+main > .home > .content > .project-progress > table td > button{
+  border-radius: 20px;
+  background-color: rgb(2, 77, 164);
+  padding: 5px;
+  width: 100px;
+  border: none;
+  color: white;
+}
+
+main > .home > .scontent > .project-progress > table td > button:hover{
+  background-color: rgb(0, 43, 93);
+}
+
+main > .home > .content > .achievements{
+  width: 40%;
+  padding: 10px;
+}
+
+main > .home > .content > .achievements > div{
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.695);
+}
+
+/* task design  */
+
+.task-content{
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  height: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.612);
+  padding: 5px;
+  overflow: auto;
+}
+
+.task-content > table {
+  width: 100%;
+  text-align: center;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+
+.task-content > table tr{
+  border-bottom: 1px solid black; 
+  height: 200px;
+}
+
+.task-content > table tr:first-child{
+  height: 50px;
+}
+
+.add-btn{
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  font-size: 1.5rem;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(214, 214, 214);
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.623);
+}
+
+.add-btn:hover{
+  background-color: rgb(161, 161, 161);
+}
+
+
+/* user add design  */
+
+.user-add-design{
+  width: 100%;
+  height: 100%;
+  margin-top: -100px;
+  padding: 20px;
+}
+
+.user-add-design > .info-container{
+  background-color: rgb(213, 213, 213);
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  height: 80%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.486);
+}
+
+.user-add-design > .info-container > .vertical-line{
+  border: 1px solid black;
+}
+
+.user-add-design > .info-container > div{
+
+}
+
+.user-add-design > .info-container > .user-info,
+.user-add-design > .info-container > .user-acc{
+  width: 49%;
+  padding: 10px;
+}
+
+.user-add-design > .info-container > .user-info label,
+.user-add-design > .info-container > .user-acc label{
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.user-add-design > .info-container > .user-info input,
+.user-add-design > .info-container > .user-acc input, select{
+  margin-left: 20px;
+  font-size: 1.5rem;
+  width: 90%;
+  color: black;
+}
+
+.avatar-container{
+  width: 45%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  overflow: hidden;
+}
+.avatar-container > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-add-design > input,
+.user-add-design > button{
+  position: absolute;
+  bottom: 40px;
+  width: 200px;
+  font-size: 1.5rem;
+}
+
+.user-add-design > input {
+  left: 50px;
+}
+
+.user-add-design > button{
+  left: 300px;
+}
+
+
+
+/* add-project-container design  */
+
+.add-project-container{
+  background-color: rgb(213, 213, 213);
+  width: 100%;
+  height: 80%;
+  margin-top: -50px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.257);
+}
+
+.add-project-container label{
+  display: inline-block;
+  width: 49%;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.add-project-container input{
+  width: 49%;
+  font-size: 1.5rem;
+}
+
+.add-project-container > textarea{
+  width: 99%;
+  min-height: 100px;
+}
