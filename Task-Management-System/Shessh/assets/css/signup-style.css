@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  position: absolute;
+  background-color: rgba(0, 162, 255, 0.38);
+  width: 100vw;
+  height: 60px;
+  top: 0px;
+  gap: 20px;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif ;
+}
+
+.menu-bar{
+  width: 50px;
+  height: 100%;
+  background-color: rgb(3, 123, 193);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-bar:hover{
+  background-color: rgb(5, 142, 222);
+}
+
+.menu-bar > span{
+  background-color: black;
+  width: 80%;
+  height: 10%;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  flex-direction: column;
+  width: 200px;
+}
+
+.dropdown-menu a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.dropdown-menu a:hover  {
+  background-color: rgba(0, 162, 255, 0.38);
+}
+
+nav > h1{
+  color: white;
+}
+
+nav > button{
+  position: absolute;
+  right: 10px;
+  font-size: 1.2rem;
+  padding: 10px;
+  padding-inline: 20px;
+  border-radius: 50px;
+  background-color: rgba(1, 134, 216, 0.966);
+  color: white;
+}
+
+nav > button:hover{
+  background-color: rgba(0, 88, 142, 0.966);
+}
